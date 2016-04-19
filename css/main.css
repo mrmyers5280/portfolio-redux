@@ -1,1 +1,50 @@
 /**** main.css ****/
+
+.portfolio-header {
+	position: relative;
+	background-image: url(../images/Green-mtn-selfie-banner.jpg);
+}
+
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+}
+
+.mdl-layout__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  color: #795548;
+}
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+.portfolio-logo-row {
+  min-height: 200px;
+}
+
+.is-compact .portfolio-logo-row {
+  min-height: auto;
+}
+
+.portfolio-logo {
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin: auto auto 10px;
+  /* M logo styles */
+  font-family: "Racing Sans One";
+  font-size: 160px;
+  text-shadow: 2px 2px 4px black
+}
+
+.is-compact .portfolio-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 7px;
+  font-size: 48px;
+}
