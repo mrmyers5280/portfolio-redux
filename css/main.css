@@ -35,10 +35,21 @@ body {
 .header__sub-title {
 	padding-bottom: 30px;
 }
-.section {
+.section__content {
 	width: 60%;
 	margin: 0 auto;
+	line-height: 1.67em;
 }
+.section__project h2 {
+	padding-top: 20px;
+}
+.section__project img {
+	width: 100%;
+}
+.section__project--bkg-brown {
+	background-color: #C5B6B1;
+}
+
 .separator {
 	text-align: center;
 	margin: 40px auto;
