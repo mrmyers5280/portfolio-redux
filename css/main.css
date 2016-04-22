@@ -16,8 +16,21 @@
 	margin: 1.33em 0;
 }
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* resets */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .header {
 	background-image: url(../images/Green-mtn-selfie-banner.jpg);
 	background-size: cover;
@@ -35,20 +48,80 @@ body {
 .header__sub-title {
 	padding-bottom: 30px;
 }
+
+/* grid */
+.row {
+	margin: 0 -10px;
+	margin-bottom: 20px;
+}
+.row:last-child {
+	margin-bottom: 0;
+}
+[class*="col-"] {
+	padding: 10px;
+}
+
+@media all and ( min-width: 600px ) {
+
+	.col-2-3 {
+		float: left;
+		width: 66.66%;
+  }
+	.col-1-2 {
+		float: left;
+		width: 50%;
+  }
+	.col-1-3 {
+		float: left;
+		width: 33.33%;
+  }
+	.col-1-4 {
+		float: left;
+		width: 25%;
+  }
+	.col-1-8 {
+		float: left;
+		width: 12.5%;
+  }
+
+}
+
+/* inside gutters */
+[class*='col-'] {
+	padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+/* outside gutters */
+.grid-pad {
+	padding: 20px 0 20px 20px;
+}
+.grid-pad > [class*='col-']:last-of-type {
+	padding-right: 20px;
+}
+
 .section__content {
-	width: 60%;
-	margin: 0 auto;
 	line-height: 1.67em;
 }
-.section__project h2 {
-	padding-top: 20px;
+.section__introduction {
+	width: 80%;
+	margin: 0 auto;
 }
 .section__project img {
 	width: 100%;
 }
-.section__project--bkg-brown {
+/*.section__project h2 {
+	padding-top: 20px;
+}*/
+/*.section__project--bkg-brown {
 	background-color: #C5B6B1;
 }
+.section__project--bkg-img {
+	background-image: url(../images/capstone-app_Screenshot-big.png);
+	background-size: cover;
+}*/
 
 .separator {
 	text-align: center;
