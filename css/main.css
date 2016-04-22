@@ -18,6 +18,10 @@
 body {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
 
 /* resets */
 *,
@@ -29,24 +33,6 @@ body {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.header {
-	background-image: url(../images/Green-mtn-selfie-banner.jpg);
-	background-size: cover;
-	color: #795548;
-	text-align: center;
-}
-.header__logo {
-	height: 150px;
-	width: 150px;
-	margin: auto auto 10px;
-	font-family: "Racing Sans One", sans-serif;
-	font-size: 160px;
-	text-shadow: 2px 2px 4px black;
-}
-.header__sub-title {
-	padding-bottom: 30px;
 }
 
 /* grid */
@@ -102,12 +88,33 @@ body {
 	padding-right: 20px;
 }
 
+.header {
+	background-image: url(../images/Green-mtn-selfie-banner.jpg);
+	background-size: cover;
+	color: #795548;
+	text-align: center;
+}
+.header__logo {
+	height: 150px;
+	width: 150px;
+	margin: auto auto 10px;
+	font-family: "Racing Sans One", sans-serif;
+	font-size: 160px;
+	text-shadow: 2px 2px 4px black;
+}
+.header__sub-title {
+	padding-bottom: 30px;
+}
+
 .section__content {
 	line-height: 1.67em;
 }
 .section__introduction {
 	width: 80%;
 	margin: 0 auto;
+}
+.section__introduction a {
+	color: #7C98D9;
 }
 .section__project img {
 	width: 100%;
@@ -127,4 +134,25 @@ body {
 	text-align: center;
 	margin: 40px auto;
 	color: #795548;
+}
+
+/* footer styles */
+.footer {
+	padding: 4em 0;
+	background-color: #795548;
+	text-align: center;
+}
+.footer p {
+	color: #fff;
+}
+.social > li {
+	display: inline-block;
+	padding-right: 1.5rem;
+}
+.footer a {
+	color: #392822;
+}
+.footer a:visited,
+.footer a:hover {
+	color: #DF8F2B;
 }
