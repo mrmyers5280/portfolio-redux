@@ -129,10 +129,35 @@ a {
 	background-image: url(../images/capstone-app_Screenshot-big.png);
 	background-size: cover;
 }*/
-
+.button {
+	background-color: #DF8F2B; /* Green 4CAF50 */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+/* Grow from hover.css */
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	transform: scale(1.1);
+}
 .separator {
 	text-align: center;
-	margin: 40px auto;
+	margin: 100px auto;
 	color: #795548;
 }
 
