@@ -155,6 +155,7 @@ a {
 .hvr-grow:active {
 	transform: scale(1.1);
 }
+
 .separator {
 	text-align: center;
 	margin: 100px auto;
