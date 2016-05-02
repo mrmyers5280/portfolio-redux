@@ -107,6 +107,10 @@ a {
 	padding-bottom: 30px;
 }
 
+section:nth-of-type(even) {
+	background-color: #ADD1F3;
+	border-bottom: 6px solid #E85D2A;
+}
 .section__content {
 	line-height: 1.67em;
 }
@@ -167,8 +171,9 @@ a {
 /* footer styles */
 .footer {
 	padding: 4em 0;
-	background-color: #795548;
+	background-color: #826A4C; /* 795548 */
 	text-align: center;
+	border-bottom: 6px solid #E85D2A;
 }
 .footer p {
 	color: #fff;
